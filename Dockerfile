@@ -22,7 +22,7 @@ RUN \
 ADD etc/supervisor/conf.d/elasticsearch.conf /etc/supervisor/conf.d/elasticsearch.conf
 ADD etc/supervisor/conf.d/logstash.conf /etc/supervisor/conf.d/logstash.conf
 ADD etc/supervisor/conf.d/cron.conf /etc/supervisor/conf.d/cron.conf
-ADD usr/share/elasticsearch/lib/elasticsearch-http-basic-1.4.0.jar /usr/share/elasticsearch/lib/elasticsearch-http-basic-1.4.0.jar
+ADD usr/share/elasticsearch/lib/elasticsearch-http-basic-1.5.1.jar /usr/share/elasticsearch/lib/elasticsearch-http-basic-1.5.1.jar
 
 ADD /crontab.root /var/spool/cron/crontabs/root
 ADD etc/logstash/logstash.conf /etc/logstash/logstash.conf
