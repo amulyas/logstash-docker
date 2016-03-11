@@ -1,5 +1,5 @@
 FROM frodenas/java7
-MAINTAINER Long Nguyen & Dr Nic Williams & Amulya Shamr
+MAINTAINER Long Nguyen & Dr Nic Williams & Amulya Shamra
 
 ENV DEBIAN_FRONTEND noninteractive
 
