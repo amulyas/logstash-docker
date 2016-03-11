@@ -1,3 +1,2 @@
-01 * * * * /usr/local/bin/curator --host 127.0.0.1 delete indices --older-than 3 --time-unit days --timestring '\%Y.\%m.\%d'
-0,5,10,15,20,25,30,35,40,45,50,55 * * * * echo "hello 123" >> /tmp/test.txt
+01 01 * * * /usr/local/bin/curator --host 127.0.0.1 delete indices --older-than 3 --time-unit days --timestring '\%Y.\%m.\%d'
 
