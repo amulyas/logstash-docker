@@ -28,6 +28,7 @@ RUN chmod +x /usr/share/elasticsearch/bin/*.sh
 
 ADD /crontab.root /var/spool/cron/crontabs/root
 RUN chown root:crontab /var/spool/cron/crontabs/root
+RUN chmod 600 /var/spool/cron/crontabs/root
 ADD etc/logstash/logstash.conf /etc/logstash/logstash.conf
 ADD etc/kibana/config.js /opt/logstash/vendor/kibana/config.js
 
