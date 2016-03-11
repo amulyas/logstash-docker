@@ -26,7 +26,8 @@ ADD usr/share/elasticsearch/lib/elasticsearch-http-basic-1.5.1.jar /usr/share/el
 ADD usr/share/elasticsearch/bin/elasticsearch.in.sh /usr/share/elasticsearch/bin/elasticsearch.in.sh
 RUN chmod +x /usr/share/elasticsearch/bin/*.sh
 
-ADD /crontab.root /etc/cron.d/root
+ADD /crontab.root /var/spool/cron/crontabs
+RUN chown root:crontab /var/spool/cron/crontabs
 ADD etc/logstash/logstash.conf /etc/logstash/logstash.conf
 ADD etc/kibana/config.js /opt/logstash/vendor/kibana/config.js
 
